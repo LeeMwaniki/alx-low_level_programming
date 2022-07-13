@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = '0'; i <= '9'; i++)
 		putchar(i);
-	for (j = 'A'; j <= 'F'; j++)
+	for (j = 'a'; j <= 'f'; j++)
 		putchar(j);
 	putchar(10);
 	return (0);
