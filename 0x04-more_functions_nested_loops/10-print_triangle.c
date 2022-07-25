@@ -2,28 +2,30 @@
 #include <stdio.h>
 
 /**
- *print_triangle - prints triangle of size n using '#'
- *@size: size of triangle
- *Return: void
+ *print_triangle - prints triangle of dimensions 'size'
+ *@size: Describe size of triangle
+ *Return: 0
  */
 void print_triangle(int size)
 {
 	int i, j, k;
 
-	for (i = 0; i < size; i++)
-	{
-		for (k = 0; k < size; k++)
-		{
-			_putchar(' ');
-		}
-		for (j = 0; j < i; j++)
-		{
-			_putchar('#');
-		}
-		_putchar('\n');
-	}
 	if (size <= 0)
 	{
-		_printchar('\n');
+		_putchar('\n');
+	} else
+	{
+		for (i = 0; i < size; i++)
+		{
+			for (j = 0; j < size; j++)
+			{
+				_putchar(' ');
+			}
+			for (k = 0; k < i; k++)
+			{
+				_putchar('#');
+			}
+		_putchar('\n');
+		}
 	}
 }
