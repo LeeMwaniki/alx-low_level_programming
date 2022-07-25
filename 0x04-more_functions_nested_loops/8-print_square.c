@@ -2,20 +2,26 @@
 #include <stdio.h>
 
 /**
- * print_square - print square using ##
- * @size: length / width of square
- * Return: void
+ *print_square - prints square of 'size' dimensions
+ *@size: dimensions of square
+ *Return: void
  */
 void print_square(int size)
 {
-	int length, width;
+	int i, j;
 
-	for (length = 0; length < size; length++)
+	if (size <= 0)
 	{
-		for (width = 0; width < size; width++)
-		{
-			_putchar('#');
-		}
 		_putchar('\n');
+	} else
+	{
+		for (i = 0; i < size; i++)
+		{
+			for (j = 0; j < size; j++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
 	}
 }
