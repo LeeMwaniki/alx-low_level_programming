@@ -2,17 +2,18 @@
 #include <stdio.h>
 
 /**
- * description - prints numbers 0 t0 9
+ * description - prints numbers 0 to 9
  *
  * Return: void
  */
 void print_numbers(void);
 {
-	int i;
+	char c;
 
-	for (i = 0; i <= 9; i++)
+	for (c = '0'; c <= '10'; c++)
 	{
-		_putchar(i + '0');
+		_putchar(c);
 	}
-	_putchar ('\n');
+	_putchar('10');
 }
+
